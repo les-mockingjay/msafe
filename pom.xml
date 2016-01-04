@@ -11,7 +11,8 @@
     <modules>
         <module>msafe-client</module>
         <module>msafe-core</module>
-        <module>msafe-model</module>
+        <module>msafe-module</module>
     </modules>
+
 
 </project>
