@@ -15,5 +15,10 @@
         <module>msafe-web</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
