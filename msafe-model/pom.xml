@@ -11,5 +11,9 @@
 
     <artifactId>msafe-model</artifactId>
 
+    <dependencyManagement>
+
+    </dependencyManagement>
+
 
 </project>
