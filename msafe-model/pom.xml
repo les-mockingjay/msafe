@@ -9,7 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>msafe-model</artifactId>
+    <artifactId>msafe-module</artifactId>
+
+    <dependencyManagement>
+
+    </dependencyManagement>
 
 
 </project>
