@@ -12,11 +12,7 @@
     <artifactId>msafe-web</artifactId>
 
         <dependencies>
-            <dependency>
-                <groupId>org.apache.velocity</groupId>
-                <artifactId>velocity</artifactId>
-                <version>1.5</version>
-            </dependency>
+
             <dependency>
                 <groupId>org.apache.velocity</groupId>
                 <artifactId>velocity</artifactId>
