@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<businessData name="larger" isRawScript="true">
+    <defineVariable name="age">
+        <simpleValue type="integer">11</simpleValue>
+    </defineVariable>
+    <exprGroup linker="AND"/>
+    <rawScript>
+        <content xml:space="preserve"><![CDATA[]]></content>
+    </rawScript>
+</businessData>
