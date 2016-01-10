@@ -29,9 +29,9 @@ public class SelectConditionAdapter {
 	private Map columnMap;
 	private static Map compartorMap=new HashMap();
 	static {
-		compartorMap.put( org.ralasafe.user.NoValueComparator.IS_NULL.getType(), 
+		compartorMap.put( org.ralasafe.user.NoValueComparator.IS_NULL.getType(),
 				NoValueComparator.IS_NULL );
-		compartorMap.put( org.ralasafe.user.NoValueComparator.NOT_NULL.getType(), 
+		compartorMap.put( org.ralasafe.user.NoValueComparator.NOT_NULL.getType(),
 				NoValueComparator.NOT_NULL );
 		compartorMap.put( org.ralasafe.user.SingleValueComparator.EQUAL.getType(), 
 				SingleValueComparator.EQUAL );
