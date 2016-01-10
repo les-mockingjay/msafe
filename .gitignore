@@ -16,7 +16,7 @@ hs_err_pid*
 # IntelliJ project files
 .idea
 *.iml
-out
+out/
 gen### Maven template
 target/
 pom.xml.tag
@@ -29,7 +29,7 @@ buildNumber.properties
 .mvn/timing.properties
 
 # Created by .ignore support plugin (hsz.mobi)
-app-ds.properties
-datasources.xml
-ralasafe-db.properties
-web.xml
+#app-ds.properties
+#datasources.xml
+#ralasafe-db.properties
+#web.xml
