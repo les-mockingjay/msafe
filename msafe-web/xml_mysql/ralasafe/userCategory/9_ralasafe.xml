@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userCategory name="developer" isRawScript="true">
+    <defineVariable name="officeCompanyLevel">
+        <simpleValue type="integer">2</simpleValue>
+    </defineVariable>
+    <defineVariable name="officeDepartment">
+        <simpleValue type="integer">2</simpleValue>
+    </defineVariable>
+    <defineVariable name="userCompany">
+        <userValue key="companyLevel"/>
+    </defineVariable>
+    <defineVariable name="userDepartMent">
+        <userValue key="departmentId"/>
+    </defineVariable>
+    <exprGroup linker="AND">
+        <binaryExpr>
+            <variable1 name="userCompany"/>
+            <simpleOperator>=</simpleOperator>
+            <variable2 name="officeCompanyLevel"/>
+        </binaryExpr>
+        <binaryExpr>
+            <variable1 name="officeDepartment"/>
+            <simpleOperator>=</simpleOperator>
+            <variable2 name="userDepartMent"/>
+        </binaryExpr>
+    </exprGroup>
+    <rawScript>
+        <content xml:space="preserve"><![CDATA[]]></content>
+    </rawScript>
+</userCategory>

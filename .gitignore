@@ -12,3 +12,24 @@
 hs_err_pid*
 .idea
 *.iml
+
+# IntelliJ project files
+.idea
+*.iml
+out/
+gen### Maven template
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Created by .ignore support plugin (hsz.mobi)
+app-ds.properties
+datasources.xml
+ralasafe-db.properties
+web.xml

@@ -11,9 +11,14 @@
     <modules>
         <module>msafe-client</module>
         <module>msafe-core</module>
-        <module>msafe-module</module>
+        <module>msafe-model</module>
         <module>msafe-web</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
