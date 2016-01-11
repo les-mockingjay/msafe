@@ -15,15 +15,31 @@
         <module>msafe-web</module>
     </modules>
 
+    <developers>
+        <developer>
+            <name>Jasic</name>
+            <url>https://github.com/Jasic</url>
+            <email>bassice@qq.com</email>
+            <timezone>8</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
     <!-- ================================================= -->
     <!-- POM属性 -->
     <!-- ================================================= -->
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <msafe-client-version>1.0-SNAPSHOT</msafe-client-version>
         <msafe-core-version>1.0-SNAPSHOT</msafe-core-version>
         <msafe-model-version>1.0-SNAPSHOT</msafe-model-version>
         <msafe-web-version>1.0-SNAPSHOT</msafe-web-version>
-
         <junit.version>4.11</junit.version>
         <lombok.version>1.14.4</lombok.version>
         <maven-lombok-plugin-version>0.9.3.1</maven-lombok-plugin-version>
