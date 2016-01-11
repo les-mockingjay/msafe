@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>msafe</groupId>
+    <groupId>com.midea.msafe</groupId>
     <artifactId>msafe-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -15,5 +15,202 @@
         <module>msafe-web</module>
     </modules>
 
+    <!-- ================================================= -->
+    <!-- POM属性 -->
+    <!-- ================================================= -->
+    <properties>
+        <msafe-client-version>1.0-SNAPSHOT</msafe-client-version>
+        <msafe-core-version>1.0-SNAPSHOT</msafe-core-version>
+        <msafe-model-version>1.0-SNAPSHOT</msafe-model-version>
+        <msafe-web-version>1.0-SNAPSHOT</msafe-web-version>
 
+        <junit.version>4.11</junit.version>
+        <lombok.version>1.14.4</lombok.version>
+        <maven-lombok-plugin-version>0.9.3.1</maven-lombok-plugin-version>
+
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- ================================================= -->
+            <!-- msafe子模块 -->
+            <!-- ================================================= -->
+            <dependency>
+                <groupId>com.midea.msafe</groupId>
+                <artifactId>msafe-client</artifactId>
+                <version>${msafe-client-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.midea.msafe</groupId>
+                <artifactId>msafe-core</artifactId>
+                <version>${msafe-core-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.midea.msafe</groupId>
+                <artifactId>msafe-model</artifactId>
+                <version>${msafe-model-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.midea.msafe</groupId>
+                <artifactId>msafe-web</artifactId>
+                <version>${msafe-web-version}</version>
+            </dependency>
+
+            <!-- ================================================= -->
+            <!-- 公共组件的引入 -->
+            <!-- ================================================= -->
+            <!-- Servlet包含的类以及方法 -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>jsp-api</artifactId>
+                <version>2.0</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>1.5</version>
+            </dependency>
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xerces</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.castor</groupId>
+                <artifactId>castor</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>bsh</groupId>
+                <artifactId>bsh</artifactId>
+                <version>2.0b4</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>5.0.8</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.3</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>3.1</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-dbcp</groupId>
+                <artifactId>commons-dbcp</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>1.4</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-pool</groupId>
+                <artifactId>commons-pool</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.8</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>1.6</version>
+            </dependency>
+
+            <!-- 引入lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>maven-lombok-plugin</artifactId>
+                <version>${maven-lombok-plugin-version}</version>
+            </dependency>
+
+            <!-- ================================================= -->
+            <!-- 测试的引入 -->
+            <!-- ================================================= -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.1</version>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.1</version>
+                    <configuration>
+                        <attach>true</attach>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <configuration>
+                        <!-- 设置WebContent目录为Web目录 -->
+                        <warSourceDirectory>WebContent</warSourceDirectory>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

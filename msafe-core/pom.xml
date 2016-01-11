@@ -2,14 +2,28 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
+        <groupId>com.midea.msafe</groupId>
         <artifactId>msafe-parent</artifactId>
-        <groupId>msafe</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-
     <artifactId>msafe-core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
+    <dependencies>
+        <!-- ================================================= -->
+        <!-- msafe子模块 -->
+        <!-- ================================================= -->
+        <dependency>
+            <groupId>com.midea.msafe</groupId>
+            <artifactId>msafe-model</artifactId>
+        </dependency>
+
+        <!-- ================================================= -->
+        <!-- 公共组件的引入 -->
+        <!-- ================================================= -->
+    </dependencies>
 
 </project>

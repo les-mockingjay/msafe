@@ -51,7 +51,7 @@
 		<servlet-class>org.ralasafe.client.servlet.RalasafeController</servlet-class>
 		<init-param>
 			<param-name>repositoryDir</param-name>
-			<param-value>D:\github\permission-center\ralasafe1.2\xml_mysql</param-value>
+			<param-value>/opt/wspace/github/permission-center/ralasafe1.2/xml_mysql</param-value>
 		</init-param>
 		<init-param>
 			<param-name>secured</param-name>
