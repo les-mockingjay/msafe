@@ -33,3 +33,4 @@ app-ds.properties
 datasources.xml
 ralasafe-db.properties
 web.xml
+*.bak
