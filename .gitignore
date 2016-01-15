@@ -30,7 +30,10 @@ buildNumber.properties
 
 # Created by .ignore support plugin (hsz.mobi)
 app-ds.properties
+/msafe-web/WebContent/WEB-INF/web.xml
 datasources.xml
 ralasafe-db.properties
-web.xml
+/msafe-web/WebContent/WEB-INF/ralasafe/ralasafe-db.properties
+/msafe-web/WebContent/WEB-INF/ralasafe/datasources.xml
+/msafe-web/WebContent/WEB-INF/ralasafe/app-ds.properties
 *.bak
