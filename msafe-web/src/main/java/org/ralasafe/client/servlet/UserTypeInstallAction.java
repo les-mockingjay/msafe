@@ -55,10 +55,11 @@ public class UserTypeInstallAction extends Action {
 			}
 		}
 
-		Object[] values = extractValues(req);
+		Object[] values = extractValues(req); // 1、解析操作；2、设置userType；3、解析文件内容（xml转UserMetadata）
 		String op = (String) values[0];
 		UserType userType = (UserType) values[1];
 		userType.setName("ralasafe");
+//		userType.setName("msafe");
 
 		Application app = new Application();
 		app.setName("ralasafe");

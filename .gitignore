@@ -37,3 +37,4 @@ ralasafe-db.properties
 /msafe-web/WebContent/WEB-INF/ralasafe/datasources.xml
 /msafe-web/WebContent/WEB-INF/ralasafe/app-ds.properties
 *.bak
+*.lock
